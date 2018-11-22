@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -413,7 +413,7 @@ Note, that not all DRC settings must be set by the manufacturer. Several can be 
 <element name="R2" library="rcl" package="R1206" value="3M" x="13" y="7.8" smashed="yes" rot="R90">
 <attribute name="VALUE" x="15.54" y="6.53" size="1.27" layer="27" rot="R90"/>
 </element>
-<element name="R3" library="rcl" package="R1206" value="500k" x="3.6" y="7.1" smashed="yes">
+<element name="R3" library="rcl" package="R1206" value="1k" x="3.6" y="7.1" smashed="yes">
 <attribute name="VALUE" x="2.33" y="4.56" size="1.27" layer="27"/>
 </element>
 <element name="R4" library="rcl" package="R1206" value="150R" x="11.5" y="17.3" smashed="yes">

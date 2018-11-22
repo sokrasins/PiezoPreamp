@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.2.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -68,6 +68,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="TODO" color="13" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -5025,7 +5026,7 @@ Source: AVX .. aphvc.pdf</description>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R1206" value="3M"/>
 <part name="R1" library="rcl" deviceset="R-EU_" device="R1206" value="3M"/>
 <part name="R2" library="rcl" deviceset="R-EU_" device="R1206" value="3M"/>
-<part name="R3" library="rcl" deviceset="R-EU_" device="R1206" value="500k"/>
+<part name="R3" library="rcl" deviceset="R-EU_" device="R1206" value="1k"/>
 <part name="R4" library="rcl" deviceset="R-EU_" device="R1206" value="150R"/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C1206" value="220p"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="220p"/>
@@ -5042,6 +5043,14 @@ Source: AVX .. aphvc.pdf</description>
 <sheets>
 <sheet>
 <plain>
+<text x="68.58" y="27.94" size="1.778" layer="100">R3: Add trimpot 
+for trimmable gain</text>
+<text x="10.16" y="15.24" size="1.778" layer="100">SJ1: Change to
+panel switch</text>
+<text x="40.64" y="0" size="1.778" layer="100">PZ-1, PZ-2, PZ-GND:
+Change to TRS</text>
+<text x="25.4" y="66.04" size="1.778" layer="100">XLR1, XLR2, XLR3:
+Change to XLR</text>
 </plain>
 <instances>
 <instance part="Q1" gate="G$1" x="45.72" y="40.64" smashed="yes">
@@ -5259,6 +5268,10 @@ Source: AVX .. aphvc.pdf</description>
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)
